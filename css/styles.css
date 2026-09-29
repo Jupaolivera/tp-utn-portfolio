@@ -189,15 +189,6 @@ section:nth-of-type(even) > * {
 .hero > *:nth-child(4) { animation-delay: 0.24s; }
 .hero > *:nth-child(5) { animation-delay: 0.32s; }
 
-.ola {
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  width: 100%;
-  height: 60px;
-  display: block;
-}
-
 .foto-perfil {
   width: 160px;
   height: 160px;
