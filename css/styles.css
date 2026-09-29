@@ -189,6 +189,15 @@ section:nth-of-type(even) > * {
 .hero > *:nth-child(4) { animation-delay: 0.24s; }
 .hero > *:nth-child(5) { animation-delay: 0.32s; }
 
+.ola {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  display: block;
+}
+
 .foto-perfil {
   width: 160px;
   height: 160px;
@@ -260,12 +269,18 @@ section:nth-of-type(even) .dato {
 }
 
 .dato-label {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
   color: var(--color-acento);
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.03em;
   margin-bottom: 0.35rem;
+}
+
+.dato-icono {
+  flex-shrink: 0;
 }
 
 .dato-valor {
@@ -334,6 +349,14 @@ section:nth-of-type(even) .dato {
   padding: 0.3rem 0.9rem;
   font-size: 0.9rem;
   color: var(--color-texto);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.tags li i {
+  color: var(--color-acento);
+  font-size: 1rem;
 }
 
 section:nth-of-type(odd) .tags li {
@@ -370,6 +393,11 @@ section:nth-of-type(even) .proyecto {
 
 .proyecto-imagen-placeholder {
   height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-plata);
+  opacity: 0.55;
   background: linear-gradient(135deg, var(--color-fondo-alt), var(--color-borde));
 }
 
@@ -492,4 +520,29 @@ footer {
   padding: 2rem 1.5rem;
   color: var(--color-texto-secundario);
   border-top: 1px solid var(--color-borde);
+}
+
+/* --- Volver arriba --- */
+
+.volver-arriba {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--color-acento);
+  color: var(--color-fondo);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  text-decoration: none;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+  z-index: 20;
+  transition: transform 0.2s ease;
+}
+
+.volver-arriba:hover {
+  transform: translateY(-3px);
 }

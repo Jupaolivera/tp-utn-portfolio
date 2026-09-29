@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
@@ -45,6 +46,9 @@
         <a href="cv/juan-pablo-olivera-cv.pdf" class="boton boton-secundario" download>Descargar CV</a>
         <a href="#contacto" class="boton boton-secundario">Contactarme</a>
       </div>
+      <svg class="ola" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,30 C240,60 480,0 720,20 C960,40 1200,10 1440,30 L1440,60 L0,60 Z" fill="var(--color-fondo-alt)"></path>
+      </svg>
     </section>
 
     <section id="sobre-mi">
@@ -58,15 +62,24 @@
 
       <div class="info-general">
         <div class="dato">
-          <span class="dato-label">Ubicación</span>
+          <span class="dato-label">
+            <svg class="dato-icono" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Ubicación
+          </span>
           <span class="dato-valor">CABA, Argentina</span>
         </div>
         <div class="dato">
-          <span class="dato-label">Idiomas</span>
+          <span class="dato-label">
+            <svg class="dato-icono" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            Idiomas
+          </span>
           <span class="dato-valor">Español (nativo), Inglés (avanzado), Alemán (básico)</span>
         </div>
         <div class="dato">
-          <span class="dato-label">Educación</span>
+          <span class="dato-label">
+            <svg class="dato-icono" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg>
+            Educación
+          </span>
           <span class="dato-valor">
             Tecnicatura Universitaria en Programación — UTN (2024–2027, en curso)<br />
             Full Stack Web Developer — Henry (2021)<br />
@@ -75,7 +88,10 @@
           </span>
         </div>
         <div class="dato">
-          <span class="dato-label">Experiencia actual</span>
+          <span class="dato-label">
+            <svg class="dato-icono" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+            Experiencia actual
+          </span>
           <span class="dato-valor">Software Developer en Mercado Libre (Kotlin, Spring Boot)</span>
         </div>
       </div>
@@ -102,31 +118,31 @@
         <div class="conocimientos-categoria">
           <h3>Backend</h3>
           <ul class="tags">
-            <li>Kotlin</li>
-            <li>Spring Boot</li>
-            <li>Node.js</li>
-            <li>NestJS</li>
-            <li>Java</li>
-            <li>C# / .NET</li>
+            <li><i class="devicon-kotlin-plain" aria-hidden="true"></i> Kotlin</li>
+            <li><i class="devicon-spring-plain" aria-hidden="true"></i> Spring Boot</li>
+            <li><i class="devicon-nodejs-plain" aria-hidden="true"></i> Node.js</li>
+            <li><i class="devicon-nestjs-plain" aria-hidden="true"></i> NestJS</li>
+            <li><i class="devicon-java-plain" aria-hidden="true"></i> Java</li>
+            <li><i class="devicon-dotnetcore-plain" aria-hidden="true"></i> C# / .NET</li>
           </ul>
         </div>
         <div class="conocimientos-categoria">
           <h3>Frontend</h3>
           <ul class="tags">
-            <li>React</li>
+            <li><i class="devicon-react-original" aria-hidden="true"></i> React</li>
           </ul>
         </div>
         <div class="conocimientos-categoria">
           <h3>Bases de datos</h3>
           <ul class="tags">
-            <li>MongoDB</li>
-            <li>SQL Server</li>
+            <li><i class="devicon-mongodb-plain" aria-hidden="true"></i> MongoDB</li>
+            <li><i class="devicon-microsoftsqlserver-plain" aria-hidden="true"></i> SQL Server</li>
           </ul>
         </div>
         <div class="conocimientos-categoria">
           <h3>Otros</h3>
           <ul class="tags">
-            <li>Git / GitHub</li>
+            <li><i class="devicon-git-plain" aria-hidden="true"></i> Git / GitHub</li>
           </ul>
         </div>
       </div>
@@ -147,7 +163,9 @@
 
       <div class="proyectos-grid">
         <article class="proyecto">
-          <div class="proyecto-imagen proyecto-imagen-placeholder" aria-hidden="true"></div>
+          <div class="proyecto-imagen proyecto-imagen-placeholder" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="44" height="44" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="7" y1="13" x2="17" y2="13"/><line x1="7" y1="16" x2="13" y2="16"/></svg>
+          </div>
           <div class="proyecto-contenido">
             <h3>Catálogo — TP WinForm (UTN, Programación III)</h3>
             <p>Aplicación de escritorio en C# / WinForms con ADO.NET y SQL Server, desarrollada en
@@ -158,7 +176,9 @@
         </article>
 
         <article class="proyecto">
-          <div class="proyecto-imagen proyecto-imagen-placeholder" aria-hidden="true"></div>
+          <div class="proyecto-imagen proyecto-imagen-placeholder" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="44" height="44" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+          </div>
           <div class="proyecto-contenido">
             <h3>Weather App</h3>
             <p>Aplicación web en React que consume una API de clima para mostrar el pronóstico
@@ -168,7 +188,9 @@
         </article>
 
         <article class="proyecto">
-          <div class="proyecto-imagen proyecto-imagen-placeholder" aria-hidden="true"></div>
+          <div class="proyecto-imagen proyecto-imagen-placeholder" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="44" height="44" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><path d="M8 10h.01"/><path d="M12 10h.01"/><path d="M16 10h.01"/><path d="M8 14h.01"/><path d="M12 14h.01"/><line x1="16" y1="14" x2="16" y2="18"/><path d="M8 18h.01"/><path d="M12 18h.01"/></svg>
+          </div>
           <div class="proyecto-contenido">
             <h3>Calculator with Sounds</h3>
             <p>Calculadora en React con feedback sonoro en cada interacción.</p>
@@ -231,6 +253,8 @@
   <footer>
     <p>© 2026 Juan Pablo Olivera</p>
   </footer>
+
+  <a href="#inicio" class="volver-arriba" aria-label="Volver arriba">↑</a>
 
 </body>
 </html>
