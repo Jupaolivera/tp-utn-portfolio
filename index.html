@@ -7,6 +7,10 @@
   <meta name="description" content="Portfolio de Juan Pablo Olivera, Desarrollador Backend, con proyectos, conocimientos y contacto.">
   <meta name="keywords" content="desarrollador backend, portfolio, Kotlin, Node.js, .NET, programación">
   <meta name="robots" content="index, follow">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b1a2e'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='16' fill='%23c9ced4' text-anchor='middle'%3EJP%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
@@ -130,8 +134,19 @@
 
     <section id="proyectos">
       <h2>Proyectos</h2>
+
+      <article class="proyecto-featured">
+        <img src="img/basic-synth-screenshot.png" alt="Captura de pantalla de Basic Synth" class="proyecto-featured-imagen" />
+        <div class="proyecto-contenido">
+          <h3>Basic Synth</h3>
+          <p>Sintetizador básico programado a medida, cruzando mi experiencia en diseño de
+            sonido con desarrollo de software.</p>
+          <a href="https://github.com/Jupaolivera/BasicSynth" class="boton boton-primario" target="_blank" rel="noopener">Ver en GitHub</a>
+        </div>
+      </article>
+
       <div class="proyectos-grid">
-        <article class="proyecto proyecto-destacado">
+        <article class="proyecto">
           <div class="proyecto-imagen proyecto-imagen-placeholder" aria-hidden="true"></div>
           <div class="proyecto-contenido">
             <h3>Catálogo — TP WinForm (UTN, Programación III)</h3>
@@ -142,23 +157,13 @@
           </div>
         </article>
 
-        <article class="proyecto proyecto-destacado">
+        <article class="proyecto">
           <div class="proyecto-imagen proyecto-imagen-placeholder" aria-hidden="true"></div>
           <div class="proyecto-contenido">
             <h3>Weather App</h3>
             <p>Aplicación web en React que consume una API de clima para mostrar el pronóstico
               según la ubicación buscada.</p>
             <a href="https://github.com/Jupaolivera/Weather-App-React" class="boton boton-secundario" target="_blank" rel="noopener">Ver en GitHub</a>
-          </div>
-        </article>
-
-        <article class="proyecto proyecto-destacado">
-          <div class="proyecto-imagen proyecto-imagen-placeholder" aria-hidden="true"></div>
-          <div class="proyecto-contenido">
-            <h3>Basic Synth</h3>
-            <p>Sintetizador básico programado a medida, cruzando mi experiencia en diseño de
-              sonido con desarrollo de software.</p>
-            <a href="https://github.com/Jupaolivera/BasicSynth" class="boton boton-secundario" target="_blank" rel="noopener">Ver en GitHub</a>
           </div>
         </article>
 
